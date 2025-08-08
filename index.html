@@ -9,7 +9,7 @@
 </head>
 <body >
     <nav>
-        <div id="icons" class="flex  gap-8 gap bg-[#eff8fe] py-2 md:flex-row justify-between px-8 py-3">
+        <div id="icons" class="flex md:flex-row gap-8 gap bg-[#eff8fe] py-2 md:flex-row justify-between px-8 py-3 ////SMALL-SCREEN flex-col ">
             
             <div id="first-part-icons" class="flex  mx-auto  gap-4 text-[#242e8f] md:mx-0">
 
@@ -46,7 +46,7 @@
 
             <img src="Images/logo.png" alt="" class="h-[100px] w-[200px]">
 
-            <div id="address" class="flex items-center gap-6">
+            <div id="address" class=" md:flex items-center gap-6 ////SMALL-SCREEN hidden">
 
                 <div id="phone" class="flex gap-2 ">
                     <div class="border border-gray-400 rounded-full w-10 h-10 flex items-center justify-center text-[#242e8f]"> 
@@ -82,7 +82,7 @@
  <!-- second part after nav bar that has Fake nav-bar and animations-->
   <div id="parent" class="flex flex-col bg-[#e7ecef]">
 <!--Fake-nav bar that is positioned-->
-     <div id="fake-nav-bar" class="flex gap-6 justify-start items-center pl-6 w-[92%] h-24 border rounded-md mx-auto bg-[#242e8f] text-white font-extralight relative bottom-10 pb-10">
+     <div id="fake-nav-bar" class="md:flex gap-6 justify-start items-center pl-6 w-[92%] h-24 border rounded-md mx-auto bg-[#242e8f] text-white font-extralight relative bottom-10 pb-10  ////SMALL-SCREEN hidden">
     <a href="" class="border-b-2 border-[#f8a51b] px-3">HOME</a>
     <a href="" class="border-b-2 border-[#242e8f] hover:border-[#f8a51b] px-3">SCHEMES</a>
     <a href="" class="border-b-2 border-[#242e8f] hover:border-[#f8a51b] px-3">INVESTMENT</a>
@@ -93,45 +93,45 @@
  </div>
 
  <!-- second part after nav bar that has animations-->
-  <div id="animations" class="border flex">
+  <div id="animations" class="border flex md:flex-row ////SMALL-SCREEN flex-col ">
 
-    <div id="texts & button" class="w-[1/2] flex flex-col gap-10 pl-10">
-        <div id="texts" class="space-y-4">
-            <span id="parent" class="text-3xl font-extralight text-[#1f2f4f]"> <span class="font-bold text-[#f8a51b]">Member First</span>, data-driven, evidence-based and high performing organization</span>
+    <div id="texts & button" class="w-[1/2] flex flex-col md:gap-10 pl-10 /// gap-6 py-4">
+        <div id="texts" class="space-y-2 md:space-y-4">
+            <span id="parent" class="md:text-3xl font-extralight text-[#1f2f4f]  /// text-xl"> <span class="font-bold text-[#f8a51b]">Member First</span>, data-driven, evidence-based and high performing organization</span>
             <span class="block font-bold text-[#242e8f]"> MEMBERS FIRST</span>
         </div>
-        <button class="block text-white  bg-[#242e8f] w-[35%] h-16 text-xl font-bold rounded-md hover:bg-white hover:text-[#242e8f] hover:border-[#242e8f] border-2 ">Learn More</button>
+        <button class="block text-white  bg-[#242e8f] md:w-[35%] h-16 md:text-xl font-bold rounded-md hover:bg-white hover:text-[#242e8f] hover:border-[#242e8f] border-2 //// w-[50%] ">Learn More</button>
     </div>
 
-    <img src="Images/public-real.png" alt="" class="w- h-[80vh] pl-30">
+    <img src="Images/public-real.png" alt="" class="xl:block h-[80vh] pl-30  ////SMALL-SCREEN hidden">
   </div>
  </div>
     
 
   <!-- THIRD SECTION-->
-   <div id="Third section" class=" flex flex-col  gap-10 bg-[#f7f7f7] py-4">
+   <div id="Third section" class=" flex flex-col  gap-10 bg-[#f7f7f7] py-4  ////SMALL-SCREEN">
 
-    <div id="first-part-third-section" class="flex justify-between  w-[80%] mx-auto relative bottom-16 ">
+    <div id="first-part-third-section" class="flex justify-between  md:w-[80%] mx-auto md:relative bottom-16     /////overflow-scroll ">
 
-        <div id="1" class=" bg-white flex justify-center flex-col items-start pl-8 w-[25%] h-52 border  p-4 border-gray-300 hover:relative hover:bottom-2">
+        <div id="1" class=" bg-white flex justify-center flex-col items-start pl-8 w-[25%] h-52 border  p-4 border-gray-300 hover:relative hover:bottom-2    ////min-w-[260px] flex-shrink-0">
             <div><ion-icon name="people-outline" class="w-12 h-12 text-[#242e8f] "></ion-icon></div>
             <span class="block text-[#1f2f4f] font-bold text-xl">Member First</span>
             <div class="text-gray-500"><span class="font-bold text-[#242e8f]">13 Million</span> of Rwandans are  <br> covered by RSSB services</div>
         </div>
 
-        <div id="2" class=" bg-white flex justify-center flex-col items-start pl-8 w-[25%] h-52 border border-gray-300 hover:relative hover:bottom-2">
+        <div id="2" class=" bg-white flex justify-center flex-col items-start pl-8 w-[25%] h-52 border border-gray-300 hover:relative hover:bottom-2   ////min-w-[260px] flex-shrink-0">
             <div><ion-icon name="trending-up-outline" class="w-12 h-12 text-[#242e8f] font-bold"></ion-icon></div>
             <span class="block text-[#1f2f4f] font-bold text-xl">Experience</span>
             <div class="text-gray-500"><span class="font-bold text-[#242e8f]">60 years</span> of service for your <br> safety and well being</div>
         </div>
 
-         <div id="3" class=" bg-white flex justify-center  flex-col items-start pl-8 w-[25%] h-52 border border-gray-300 hover:relative hover:bottom-2">
+         <div id="3" class=" bg-white flex justify-center  flex-col items-start pl-8 w-[25%] h-52 border border-gray-300 hover:relative hover:bottom-2    ////min-w-[260px]min- flex-shrink-0">
             <div><ion-icon name="home-outline" class="w-12 h-12 text-[#242e8f] font-bold"></ion-icon></div>
             <span class="block text-[#1f2f4f] font-bold text-xl">Branches</span>
             <div class="text-gray-500">Our services decentralized in   <br> <span class="font-bold text-[#242e8f]">30 branches</span> for your   <br>satisfaction</div>
         </div>
 
-         <div id="4" class=" bg-white flex justify-center flex-col items-start pl-8  w-[25%] h-52 hover:relative hover:bottom-2 border border-gray-300">
+         <div id="4" class=" bg-white flex justify-center flex-col items-start pl-8  w-[25%] h-52 hover:relative hover:bottom-2 border border-gray-300    ////min-w-[260px] flex-shrink-0">
             <div><ion-icon name="clipboard-outline" class="w-12 h-12 text-[#242e8f] font-bold"></ion-icon></div>
             <span class="block text-[#1f2f4f] font-bold text-xl">Data Driven</span>
             <div class="text-gray-500">Learning from our data to  <br>improve the services offered   <br> to our members</div>
@@ -163,21 +163,21 @@
 <div id="parent" class="flex flex-col gap-3 w-[90%]  mx-auto my-20 " >
      <!--container-one-->
 
- <div id="container-one" class="flex gap-3 w-full items-center ">
+ <div id="container-one" class="md:flex gap-3 w-full items-center  md:space-y-0   /////block space-y-10  ">
 
-<div id="grid-1" class=" border-2 w-[33%] h-[250px] flex flex-col items-center justify-center rounded pb-6">
+<div id="grid-1" class=" border-2 md:w-[33%] md:h-[250px] flex flex-col items-center justify-center rounded pb-6  /////w-[full] h-[45vh] ">
     <img src="Images/public.svg" alt="" class="w-[64px] h-[80px] text-text-[#1F2F4F]">
     <span class="font-bold text-xl block">PENSION SCHEME</span>
     <span class=" block font-normal text-gray-600">Retire With Dignity</span>
 </div>
 
-<div id="grid-2" class=" border-2 w-[33%] h-[250px] flex flex-col items-center justify-center rounded pb-6">
+<div id="grid-2" class=" border-2 md:w-[33%] md:h-[250px] flex flex-col items-center justify-center rounded pb-6   /////w-[full] h-[45vh]">
     <img src="Images/public-2.svg" alt="" class="w-[64px] h-[80px] text-text-[#1F2F4F]">
     <span class="font-bold text-xl block">OCCUPATIONAL <br> HAZARDS</span>
     <span class=" block font-normal text-gray-600">We Are Here For You</span>
 </div>
 
-<div id="grid-3" class=" border-2 w-[33%] h-[250px] flex flex-col items-center justify-center rounded pb-6">
+<div id="grid-3" class=" border-2 md:w-[33%] md:h-[250px] flex flex-col items-center justify-center rounded pb-6    /////w-[full] h-[45vh]">
     <img src="Images/public-3.svg" alt="" class="w-[64px] h-[80px] text-text-[#1F2F4F]">
     <span class="font-bold text-xl block">MEDICAL SCHEMES</span>
     <span class=" block font-normal text-gray-600">Our Health, Our Future</span>
@@ -187,21 +187,21 @@
 
    <!--container-two-->
 
-  <div id="container-two" class="flex gap-3 w-full items-center ">
+  <div id="container-two" class="md:flex gap-3 w-full items-center md:space-y-0   /////block space-y-10 ">
 
-<div id="grid-4" class="w- border-2 w-[33%] h-[250px] flex flex-col items-center justify-center rounded pb-6">
+<div id="grid-4" class="w- border-2 md:w-[33%] md:h-[250px] flex flex-col items-center justify-center rounded pb-6   /////w-[full] h-[45vh]">
     <img src="Images/public-4.svg" alt="" class="w-[64px] h-[80px] text-text-[#1F2F4F]">
     <span class="font-bold text-xl block">CBHI SCHEME</span>
     <span class=" block font-normal text-gray-600">Giving You Happiness At Best Rate</span>
 </div>
 
-<div id="grid-5" class="w- border-2 w-[33%] h-[250px] flex flex-col items-center justify-center rounded pb-6">
+<div id="grid-5" class="w- border-2 md:w-[33%] md:h-[250px] flex flex-col items-center justify-center rounded pb-6  /////w-[full] h-[45vh]">
     <img src="Images/public-5.svg" alt="" class="w-[64px] h-[80px] text-text-[#1F2F4F]">
     <span class="font-bold text-xl block">EJOHEZA</span>
     <span class=" block font-normal text-gray-600">Start Early And Reap The Rewards</span>
 </div>
 
-<div id="grid-6" class="w- border-2 w-[33%] h-[250px] flex flex-col items-center justify-center rounded pb-6">
+<div id="grid-6" class="w- border-2 md:w-[33%] md:h-[250px] flex flex-col items-center justify-center rounded pb-6  /////w-[full] h-[45vh]">
     <img src="Images/public-6.svg" alt="" class="w-[64px] h-[80px] text-text-[#1F2F4F]">
     <span class="font-bold text-xl block">MATERNITY LEAVE</span>
     <span class=" block font-normal text-gray-600">Enjot Your Maternity Leave With Your Full Salary</span>
@@ -213,7 +213,7 @@
 
 
   <!--The section after section c-->
-  <div id="parent" class="flex  gap-40 overflow-x-hide bg-[#f9fafb] py-20 ">
+  <div id="parent" class="md:flex  gap-40 overflow-x-hide bg-[#f9fafb] py-20  md:space-y-0 ////block space-y-10 ">
 
   <div id="texts and button " class=" flex flex-col pl-10 gap-8 min-w-[45%] ">
     <div id="Big-texts" class="text-4xl font-bold text-[#1f2f4f]">Never miss your <br> contributions again</div>
@@ -224,20 +224,20 @@
   </div>
 
   <!--image-->
-  <div class=" overflow-hidden shadow-3xl">
-  <img src="Images/public-7.jpeg" alt="" class="w-full h-[90vh] shadow-4xl ">
+  <div class=" md:overflow-hidden    ///// overflow-none">
+  <img src="Images/public-7.jpeg" alt="" class="md:w-full md:h-[90vh] shadow-4xl  px-4 ">
   </div>
   </div>
 
  <!--SECTION D-->
- <div class="flex flex-col gap-5 mx-10 my-20">
+ <div class="flex flex-col gap-5 mx-10 my-20    ///// ">
     <span class="text-3xl font-extrabold text-[#1f2f4f]">Digital transformation</span>
     <div class="text-2xl text-gray-600">A major focus for RSSB going into 2025 is to transform into a member <br> first, <span class="text-[#f8a51b]">data driven</span>, high performing organization and a big part of that is to <br> complete its <span class="text-[#f8a51b]">shift to digital</span>. </div>
  </div>
 
 
  <!--Triplet Paragraphs-->
- <div id="parent of triplet Paragraphs" class="flex gap-8 mx-10  text-md pb-20">
+ <div id="parent of triplet Paragraphs" class=" md:flex gap-8 mx-10  text-md pb-20 md:space-y-0 /////block space-y-20">
 
 <div id="first-triplet" class="flex flex-col gap-5 items-start">
     <span class="block w-16 h-16 border rounded-full bg-[#f3f5f7] flex items-center justify-center"><ion-icon name="bar-chart" class="h-5 w-5 text-[#242e8f]"></ion-icon></span>
@@ -264,9 +264,9 @@
 
  <!-- CEO-SECTION D--> 
   <div class="bg-[#f9fafb] py-10 ">
-<div class="flex flex-col gap-8 ml-10 mr-40 my-32 border-l-2 border-[#d89b3d] px-10 pr-64  ">
+<div class="flex flex-col gap-8 ml-10 md:mr-40 my-32 border-l-2 border-[#d89b3d] px-10 md:pr-64   /////  pr-0 mr-0">
 
-    <div id="CEO Speech" class="text-2xl text-gray-800">
+    <div id="CEO Speech" class=" text-2xl text-gray-800  /////">
         “We have ambitious plans to transform RSSB, by 2025, into an organisation that is not just fully committed to delivering for our members but that puts members at the heart of all our planning and all our decision-making. Our vision is for RSSB to use all of its power and energy on behalf of our members: to be best-in-class in serving their interests, as a friend and source of help, as a modern, efficient organisation, with user-friendly, enabling technology; as a source of input to Government thinking; as a national and international thought-leader in social policy; as the leading strategic investor in our chosen markets; and as a prudent but ambitious business partner."
     </div>
 
@@ -285,14 +285,14 @@
 
 
 
-<div class="flex  justify-center items-center gap-2 mt-14 M ">
+<div class="flex  justify-center items-center gap-2 mt-14  ">
     <span class=" border-2 w-8 border-[#f8a51b] "></span>
     <p class="text-xl font-bold text-center text-[#242e8f]">NEWS & EVENTS</p>
 </div>
 
 
  <!-- SECTION AFTER THE CEO-SECTION D--> 
-  <div class="flex gap-4 px-12 mt-20">
+  <div class="md:flex md:gap-4 md:px-12 mt-20 md:space-y-0   ////block space-y-16 mx-4">
 <div class="flex flex-col gap-4">
     <div id="image">
         <img src="Images/Private-sector-meetings.jpg" alt="" class="w-[100%] ">
@@ -337,7 +337,8 @@
     <!--LAST SECTION-->
     <div class="bg-[#f3f4f6] flex flex-col gap-4 mt-10 ">
 
-    <div class="flex justify-between mx-10 border-b border-gray-300 mt-20 py-10">
+    <div class="md:flex  md:flex-row md:justify-between mx-10 border-b border-gray-300 mt-20 py-10  /////flex-col block space-y-2">
+        
     <div id="cotainer-1" class="space-y-4 text-left">
         <span class="block text-[#1f2f4f]  font-bold">GET IN TOUCH</span>
         <ul class="flex flex-col gap-1  text-gray-500 ">
