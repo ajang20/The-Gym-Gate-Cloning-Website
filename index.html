@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> RSSB</title>
     <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 class="text-red-500 text-4xl">heaond</h1>
+    <nav>
+        <div id="icons" class="flex  gap-8 gap bg-[#eff8fe] py-2 md:flex-row justify-between px-8 py-3">
+            
+            <div id="first-part-icons" class="flex  mx-auto  gap-4 text-[#242e8f] md:mx-0">
+
+                <div id="icon-1" class=" space-x-4">
+                    <ion-icon class="text-b" name="logo-linkedin" ></ion-icon>
+                    <span class="border border-gray h-5"></span>
+                </div>
+                <div id="icon-2" class=" space-x-4">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                   <span class="border border-gray h-5"></span>
+                </div>
+                <div id="icon-3" class=" space-x-4">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <span class="border border-gray h-5"></span>
+                </div>
+                <div id="icon-4" class=" space-x-4">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <span class="border border-gray h-5"></span>
+                </div>
+                <div id="icon-5" class=" space-x-4">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    
+                </div>
+            </div>
+
+            <div id="second-part-texts" class="flex gap-4 mx-auto text-sm text-[#1F2F4F] md:mx-0">
+                <span>Online Services <ion-icon name="chevron-down-outline"></ion-icon></span>
+                <span class="border border-gray h-5"></span>
+                <span>Publications</span>
+            </div>
+        </div>
+
+        <div id="logo" class="flex justify-between">
+            <img src="Images/logo.png" alt="" class="h-[100px] w-[200px]">
+
+            <div id="address" class="flex">
+
+                <div id="phone" class="flex   ">
+                    <div class="border rounded-full w-10 h-10 flex items-center justify-center text-[#242e8f]"> 
+                        <ion-icon class="w-5 h-5" name="call-outline"></ion-icon>
+                    </div>
+                    
+                    <div id="texts">
+                         <span class="block text-[#242e8f]">4044</span>
+                          <span class="block">Toll free lines</span>
+                    </div>
+                </div>
+
+                <span id="border"></span>
+
+                <div id="email">
+                    <img src="Images/email.svg" alt="" class="w-5 h-5">
+                    <div id="texts">
+                        <span class="block">info@rssb.rw</span>
+                        <span class="block">Reach to us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
