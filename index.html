@@ -42,34 +42,41 @@
             </div>
         </div>
 
-        <div id="logo" class="flex justify-between">
+        <div id="logo" class="flex justify-between items-center px-8 bg-white border w-full h-44 pb-10">
+
             <img src="Images/logo.png" alt="" class="h-[100px] w-[200px]">
 
-            <div id="address" class="flex">
+            <div id="address" class="flex items-center gap-6">
 
-                <div id="phone" class="flex   ">
-                    <div class="border rounded-full w-10 h-10 flex items-center justify-center text-[#242e8f]"> 
+                <div id="phone" class="flex gap-2 ">
+                    <div class="border border-gray-400 rounded-full w-10 h-10 flex items-center justify-center text-[#242e8f]"> 
                         <ion-icon class="w-5 h-5" name="call-outline"></ion-icon>
                     </div>
                     
                     <div id="texts">
-                         <span class="block text-[#242e8f]">4044</span>
-                          <span class="block">Toll free lines</span>
+                         <span class="block text-[#242e8f] font-bold ">4044</span>
+                          <span class="block text-sm text-gray-500">Toll free lines</span>
                     </div>
                 </div>
 
-                <span id="border"></span>
+                <span class="border border-gray h-10" id="border"></span>
 
-                <div id="email">
-                    <img src="Images/email.svg" alt="" class="w-5 h-5">
+                <div id="email" class="flex gap-2">
+                    <div class=" w-10 h-10 border rounded-full flex items-center justify-center border-gray-400">
+                         <ion-icon class="w-6 h-6 text-[#1F2F4F]" name="mail-outline"></ion-icon>
+                    </div>
+                   
                     <div id="texts">
-                        <span class="block">info@rssb.rw</span>
-                        <span class="block">Reach to us</span>
+                        <span class="block text-[#242e8f] font-bold">info@rssb.rw</span>
+                        <span class="block text-sm text-gray-500">Reach to us</span>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+
+<!-- second part after nav bar that will be positioned-->
+ <div id="fake-nav-bar"></div>
     
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
