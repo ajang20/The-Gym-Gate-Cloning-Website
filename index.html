@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./src/output.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body >
     <nav>
         <div id="icons" class="flex  gap-8 gap bg-[#eff8fe] py-2 md:flex-row justify-between px-8 py-3">
             
@@ -75,9 +75,14 @@
         </div>
     </nav>
 
-<!-- second part after nav bar that will be positioned-->
+
  
- <div id="fake-nav-bar" class="flex gap-6 justify-start items-center pl-6 w-[92%] h-24 border rounded-md mx-auto bg-[#242e8f] text-white font-extralight relative bottom-10">
+
+
+ <!-- second part after nav bar that has Fake nav-bar and animations-->
+  <div id="parent" class="flex flex-col bg-[#e7ecef]">
+<!--Fake-nav bar that is positioned-->
+     <div id="fake-nav-bar" class="flex gap-6 justify-start items-center pl-6 w-[92%] h-24 border rounded-md mx-auto bg-[#242e8f] text-white font-extralight relative bottom-10 pb-10">
     <a href="" class="border-b-2 border-[#f8a51b] px-3">HOME</a>
     <a href="" class="border-b-2 border-[#242e8f] hover:border-[#f8a51b] px-3">SCHEMES</a>
     <a href="" class="border-b-2 border-[#242e8f] hover:border-[#f8a51b] px-3">INVESTMENT</a>
@@ -86,8 +91,31 @@
     <a href="" class="border-b-2 border-[#242e8f] hover:border-[#f8a51b] px-3">CAREERS</a>
     <a href="" class="border-b-2 border-[#242e8f] hover:border-[#f8a51b] px-3">NEWS & EVENTS</a>
  </div>
- 
+
+ <!-- second part after nav bar that has animations-->
+  <div id="animations" class="border flex">
+
+    <div id="texts & button" class="w-[50%] flex flex-col gap-10 pl-10">
+        <div id="texts" class="space-y-4">
+            <span id="parent" class="text-3xl font-extralight text-[#1f2f4f]"> <span class="font-bold text-[#f8a51b]">Member First</span>, data-driven, evidence-based and high performing organization</span>
+            <span class="block font-bold text-[#242e8f]"> MEMBERS FIRST</span>
+        </div>
+        <button class="block text-white  bg-[#242e8f] w-[35%] h-16 text-xl font-bold rounded-md">Learn More</button>
+    </div>
+
+    <img src="Images/image-1.jpeg" alt="" class="w=1/2 h-[50vh] pl-52">
+  </div>
+ </div>
     
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
